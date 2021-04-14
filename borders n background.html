@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Height,Width,borders and background</title>
+    <style>
+        #firstPara{
+            background-color: red;
+            height: 200px;
+            width: 455px;
+            border-color: green;
+            border-width: 4px;
+            border-style: solid;
+            border-radius: 13px;   /*for rounded courners*/
+        }
+
+        #secondPara{
+            background-color: rgba(107, 61, 121, 0.938);
+            height: 200px;
+            width: 455px;
+            border-top:solid 2px rgb(29, 141, 35);
+            border-right: blue 2px solid;
+            border-left: 2px rgb(179, 52, 69) solid;
+            border-bottom: solid 2px orange;           /*for changing individual borders*/
+            border-top-left-radius: 12px;                
+            border-bottom-right-radius: 10px;
+            border-bottom-left-radius: 20px;
+            border-top-right-radius: 15px;               /*for giving curves in individual corners*/
+        }
+
+
+        #thirdPara{
+            height: 200px;
+            width: 455px;
+            background-image: url('pic1.jpg');    /*for inserting background img. we can also add images from the net directly by copying the link*/
+            background-repeat: no-repeat;         /*for avoiding repeatation of the pic inside the given border*/
+            background-position:center top;       /*for adjusting the position. pixel values can also be used*/
+        }
+    </style>
+</head>
+<body>
+    <h2>this is heading</h2>
+    <p id="firstPara">this is paragraph</p>
+
+    <h2>this is second heading</h2>
+    <p id="secondPara">this is second paragraph</p>
+
+    <h2>this is third heading</h2>
+    <p id="thirdPara">this is third paragraph</p>
+</body>
+</html>

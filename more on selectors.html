@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on selectors</title>
+    <style>
+        h1 {
+            background-color: red;
+            color: black;
+            font-weight: bold;
+            text-align: center;
+        }
+        /* div li p {
+            color: rgb(0, 0, 128);
+            background-color: orange;
+            font-weight: bold;
+        } */
+        /* give css to those p whsoe direct parent is div */
+        /* div>p {
+            color: rgb(0, 0, 128);
+            background-color: orange;
+            font-weight: bold;
+        } */
+        /* give css to those p having having direct previous element as div */
+        div+p{
+          color: white;
+          background-color:#D2302C;
+      }
+    </style>
+</head>
+<body>
+    <h1> This is more on selectors</h1>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li class="item"><p>This is another paragraph</p></li>
+            </ul>
+            <p> This is a paragraph</p>
+        </div>
+        <p> This is second paragraph</p>
+    </div>
+    <p> This is the third paragraph</p>
+</body>
+</html>

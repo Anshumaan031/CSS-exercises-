@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo selectors and more designing</title>
+    <style>
+        .container{
+            border: 2px solid red;
+            background-color: rgb(91, 187, 174);
+            padding: 34px;
+            margin: 34px auto;
+            width: 666px;
+        }
+        a{
+            text-decoration: none;                              /*to remove the underline form link*/
+        }
+        /* example for pseudo selectors. in this case this css property gets activated when we hover ove rthe selector */
+        a:hover{
+            color: black;
+            background-color: yellow;
+        }
+        /* property when the link is already visited(another example of pseudo selector) */
+        a:visited{
+            background-color: thistle;
+        }
+        /* when we click it */
+        a:active{
+            background-color: violet;
+        }
+        .btn{
+            background-color: rgb(192, 112, 168);
+            padding: 6px;                                       /*padding inside the button*/
+            border: none;      
+            cursor: pointer;      
+            font-size: 16px;  
+            border-radius: 4px;                       
+        }
+        button:hover{
+            background-color: whitesmoke;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="cont1">
+        <h3>this is my heading</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quidem libero voluptates perferendis molestiae adipisci dolorem placeat id saepe beatae, quo sequi tenetur provident, blanditiis non facilis quia laboriosam. Temporibus quidem deleniti vero. Eaque!</p>
+        <a href="https://google.com" class="btn">read more</a>
+        <button class="btn">contact us</button>
+    </div>
+</body>
+</html>

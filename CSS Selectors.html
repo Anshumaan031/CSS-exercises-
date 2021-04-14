@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /* element selector */
+        p{
+            color: red;
+            border: 2px solid red;
+        }
+        /* id slector */
+        #alaka{
+            color:sienna;               
+        } 
+        /* class selector */
+        .hudu{
+            color:rgb(70, 45, 160);
+            background-color: rgb(165, 132, 42);               
+        }  
+        /* selector group */
+        footer,span{
+            background-color: cyan;
+        }                                                           
+    </style>
+</head>
+<body>
+    <h3>CSS Selectors</h3>
+    <p>this is a simple paragraph to demonstrate selectors of css</p> 
+    <p id="alaka">this is another simple paragraph to demonstrate selectors of css using id</p>   <!--selectors can select based on the id name alone-->
+    <p id="alaka2" class="hudu">this is another simple paragraph to demonstrate selectors of css using class</p>   <!--selectors can select based on the class name-->
+    <div>
+        <p>this is yet another simple paragraph to demonstrate selectors of css</p>  <!--will also get changed under css p selector-->
+
+    </div>
+    <span>this is span</span>
+    <footer>this is footer</footer>
+</body>
+</html>
