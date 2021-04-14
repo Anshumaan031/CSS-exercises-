@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pirata+One&display=swap" rel="stylesheet">  
+    <style>
+        *{
+             box-sizing: border-box;                             /*specifies the behaviour of width and height properties */
+        }
+
+        body{
+            font-family: 'Pirata One', cursive;
+        }
+
+        h1{
+            text-align: center;
+        }
+        .container{
+            width: 900px;
+            border: 3px solid purple;
+            margin: 33px auto;   
+            background-color: rgb(214, 52, 187);             /*adjusting the alignment under the given selector*/
+        }
+
+        .item{
+            border: 2px solid gray;
+            margin: 12px 3px;
+            padding: 12px 3px;
+            background-color: rgb(70, 131, 221);
+            border-radius: 13px; 
+        }
+
+        #fruit{
+            float: left;
+            width: 48%;
+        }
+
+        #computer{
+            float: right;
+            width: 48%;
+        }
+
+        #stationary{
+            /* float: left; */
+            /* clear: left;                           overlapping should not happen with elemenets having left float */
+            clear: both;                          /*to avoid overlapping from both sides*/
+            width: 100%;
+        }
+
+        p,h3{
+            text-align: center;                    /*right,left,cinter,justify*/
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>welcome to my store</h1>
+        <div id="fruit" class="item">
+            <h3>Fruits</h3>
+            <p id="fruitPara" class="para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                 Ullam saepe quos magni soluta reiciendis, 
+                 beatae aut aperiam architecto a excepturi voluptatibus veniam minus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero impedit saepe esse odit error facere nostrum molestias? Sed unde fugiat in! Laboriosam, quia. Quidem expedita tempore alias impedit dolor, magnam pariatur cupiditate nam sequi.</p>
+        </div>
+
+        <div id="computer" class="item">
+            <h3>Fruits</h3>
+            <p id="computerPara" class="para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Ullam saepe quos magni soluta reiciendis,
+                beatae aut aperiam architecto a excepturi voluptatibus veniam minus! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore asperiores, ad assumenda consequatur fuga error ea a est beatae, corporis hic illo vero incidunt excepturi quaerat deleniti? Numquam cum officia, unde aliquid at eveniet.</p>
+        </div>
+
+        <div id="stationary" class="item">
+            <h3>Fruits</h3>
+            <p id="stationaryPara" class="para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Ullam saepe quos magni soluta reiciendis, 
+                beatae aut aperiam architecto a excepturi voluptatibus veniam minus!</p>
+        </div>
+
+        <div id="games" class="item">
+            <h3>Fruits</h3>
+            <p id="gamesPara" class="para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Ullam saepe quos magni soluta reiciendis, 
+                beatae aut aperiam architecto a excepturi voluptatibus veniam minus!</p>
+        </div>
+    </div>
+</body>
+</html>
